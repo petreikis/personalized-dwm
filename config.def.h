@@ -91,6 +91,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
+/*	{ MODKEY,             XK_h,      layoutscroll,   {.i = -1 } },*/
+/*	{ MODKEY,             XK_l,      layoutscroll,   {.i = +1 } },*/
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
@@ -122,6 +124,7 @@ static Button buttons[] = {
 
 static const char *ipcsockpath = "/tmp/dwm.sock";
 static IPCCommand ipccommands[] = {
+  IPCCOMMAND(  layoutscroll,        1,      {ARG_TYPE_SINT}   ),
   IPCCOMMAND(  view,                1,      {ARG_TYPE_UINT}   ),
   IPCCOMMAND(  toggleview,          1,      {ARG_TYPE_UINT}   ),
   IPCCOMMAND(  tag,                 1,      {ARG_TYPE_UINT}   ),
