@@ -35,6 +35,9 @@ static const Rule rules[] = {
 	{ "Simplenote",     NULL,       NULL,       0,            1,           -1 },
 	{ "Slack",     NULL,       NULL,       0,            1,           -1 },
 	{ "Xfce4-appfinder",     NULL,       NULL,       0,            1,           -1 },
+	/* Microsoft Teams */
+	{ "crx_cifhbcnohmdccbgoicgdjpfamggdegmo",     NULL,       NULL,       0,            1,           -1 }, 
+	{ "io.gitlab.idevecore.Pomodoro",     NULL,       NULL,       0,            1,           -1 }, 
 };
 
 /* layout(s) */
